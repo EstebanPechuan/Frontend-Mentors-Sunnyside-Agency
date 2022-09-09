@@ -44,7 +44,7 @@ header {
 
 .menu {
     display: flex;
-    gap: 65px;
+    gap: 40px;
     
     li {
         color: #fff;
@@ -102,16 +102,15 @@ header {
     grid-template-columns: repeat(2, 1fr);
 
     &__text {
-        // width: 50%;
         height: 100%;
-        padding: 130px;
+        padding: 0 75px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 30px;
 
         h2 {
-            font-size: 48px;
+            font-size: 46px;
             font-family: 'Fraunces', serif;
             color: $very-dark-desaturated-blue;
             font-weight: 900 !important;
@@ -131,6 +130,7 @@ header {
             position: relative;
             background: transparent;
             border: none;
+            cursor: pointer;
 
             &.yellow::after {
                 background: $yellow;
@@ -146,6 +146,11 @@ header {
                 bottom: -1px;
                 z-index: -1;
                 border-radius: 50px;
+                opacity: 0.5;
+            }
+
+            &:hover::after {
+                opacity: 1;
             }
         }
     }
@@ -169,9 +174,9 @@ header {
             font-weight: 900 !important;
         }
         p {
-            font-size: 19px;
+            font-size: 18px;
             line-height: 1.6;
-            padding: 0 170px;
+            padding: 0 83px;
         }
     }
 
@@ -185,21 +190,21 @@ header {
         background-image: url('../images/desktop/image-graphic-design.jpg');
         color: $dark-desaturated-cyan;
         p {
-            opacity: 0.9;
+            opacity: 0.7;
         }
     }
     .orange {
         background-image: url('../images/desktop/image-photography.jpg');
         color: $dark-blue;
         p {
-            opacity: 0.9;
+            opacity: 0.7;
         }
     }
 }
 
 .testimonials {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     padding: 0 70px;
     display: flex;
     justify-content: center;
@@ -242,13 +247,13 @@ header {
             line-height: 1.6;
             color: $very-dark-grayish-blue;
         }
-        h4 {
+        h3 {
             color: $very-dark-desaturated-blue;
             font-size: 20px;
             font-family: 'Fraunces', serif;
             font-weight: 900 !important;
         }
-        h5 {
+        h4 {
             color: $grayish-blue;
         }
 
