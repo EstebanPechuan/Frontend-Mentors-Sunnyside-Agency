@@ -92,10 +92,11 @@ header {
 .row {
     width: 100%;
     height: 80vh;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     &__text {
-        width: 50%;
+        // width: 50%;
         height: 100%;
         padding: 180px;
         display: flex;
@@ -117,7 +118,7 @@ header {
     }
 
     &__img {
-        width: 50%;
+        // width: 50%;
         height: 100%;
         background-position: center;
         background-size: cover;
@@ -183,7 +184,8 @@ header {
     }
 
     &__clients {
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 50px;
     }
 
@@ -226,7 +228,8 @@ header {
 }
 
 .images {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 
     img {
         width: 100%;
@@ -234,9 +237,9 @@ header {
 }
 
 .footer {
-    background: rgb(144, 212, 197, 1);
+    background: rgb(144, 212, 197);
     color: $dark-desaturated-cyan;
-    padding: 60px;
+    padding-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,8 +261,33 @@ header {
 
     &__redes {
         margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        img {
+            width: 23px;
+        }
+    }
+
+}
+
+.attribution {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 11px !important;
+    background: $dark-moderate-cyan;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    opacity: 0.8;
+
+    
+    a {
+        font-size: 11px !important;
+        color: #fff;
     }
 }
