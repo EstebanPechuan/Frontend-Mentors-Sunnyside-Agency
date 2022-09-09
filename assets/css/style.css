@@ -256,6 +256,9 @@ header .logo img {
   display: flex;
   gap: 60px;
 }
+.footer__menu a:hover {
+  color: #fff;
+}
 .footer__redes {
   margin-top: 40px;
   display: flex;
@@ -264,6 +267,10 @@ header .logo img {
 }
 .footer__redes img {
   width: 23px;
+  cursor: pointer;
+}
+.footer__redes img:hover {
+  opacity: 0.4;
 }
 
 .attribution {

@@ -290,6 +290,10 @@ header {
         opacity: 0.6;
         display: flex;
         gap: 60px;
+
+        a:hover {
+            color: #fff;
+        }
     }
 
     &__redes {
@@ -300,6 +304,11 @@ header {
 
         img {
             width: 23px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.4;
+            }
         }
     }
 
