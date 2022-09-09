@@ -182,7 +182,7 @@ header .logo img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 90px;
+  gap: 50px;
 }
 .testimonials h2 {
   color: hsl(210deg, 4%, 67%);
@@ -206,7 +206,7 @@ header .logo img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 80px;
+  gap: 50px;
 }
 .testimonials__client img {
   width: 80px;
